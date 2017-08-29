@@ -24,6 +24,13 @@ public class TestController {
 		return value;
 	} 
 	
+	@RequestMapping("/testphp")
+	@ResponseBody
+	public Object testPhpWs() {
+		String value = service.testPHPweb();
+		System.out.print(value);
+		return value;
+	} 
 	
 	
 
